@@ -1,0 +1,195 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0064)http://localhost/~maydaygjf/AdlerOrdering/index.php/admin/login# -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<title></title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<link href="http://netdna.bootstrapcdn.com/twitter-bootstrap/2.3.1/css/bootstrap-combined.min.css" rel="stylesheet">
+<link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet">
+<link href="./login_files/default.css" rel="stylesheet" type="text/css" media="all">
+<link href="./login_files/fonts.css" rel="stylesheet" type="text/css" media="all">
+<script type="text/javascript" src="./login_files/jquery.min.js"></script>
+<script type="text/javascript" src="./login_files/main.js"></script>
+
+<!--[if IE 6]><link href="default_ie6.css" rel="stylesheet" type="text/css" /><![endif]-->
+
+</head>
+<body>
+<div id="page" class="container">
+	<div id="header">
+		<div id="logo">
+			<img src="./login_files/profile_1.png" alt="">
+			<h1><a href="./login_files/login.html">Gary</a></h1>
+			<div class="logout-btn">
+				<a href="http://localhost/~maydaygjf/AdlerOrdering/index.php/admin/logout">Logout</a>			</div>
+		</div>
+		<div id="menu">
+			<ul>
+				<li value="1" onclick="currentPage(this)" class="current_page_item"><a href="./login_files/login.html" accesskey="1" title="">User</a></li>
+				<li value="2" onclick="currentPage(this)"><a href="./login_files/login.html" accesskey="2" title="">ITEM2</a></li>
+				<li value="3" onclick="currentPage(this)"><a href="./login_files/login.html" accesskey="3" title="">ITEM3</a></li>
+				<li value="4" onclick="currentPage(this)"><a href="./login_files/login.html" accesskey="4" title="">ITEM4</a></li>
+				<li value="5" onclick="currentPage(this)"><a href="./login_files/login.html" accesskey="5" title="">ITEM5</a></li>
+			</ul>
+		</div>
+	</div>
+	<div id="main">
+		<div class="manager-title">
+			<p>Manager User Information</p>
+		</div>
+
+		<div class="search-user">
+			<input type="text/css" id="search-user">
+			<span id="search-submit" onclick="search()">Search</span>
+		</div>
+		<div class="manager-table">
+			<!-- Table goes in the document BODY -->
+			<table class="altrowstable" id="alternatecolor">
+			<tbody><tr class="evenrowcolor">
+			    <th>User ID</th>
+			    <th>Username</th>
+			    <th>User E-mail</th>
+			    <th>User Password</th>
+			    <th>Operation</th>
+			</tr>
+								<tr class="oddrowcolor">
+			    		<td>19</td>
+			    		<td>gary19</td>
+			    		<td>sysugjf@gmail.com</td>
+			    		<td>5554409ddd</td>
+			    		<td><span id="edit" onclick="editUser(this)">Edit</span>&nbsp;&nbsp;&nbsp;<span id="delete" onclick="deleteUser(this)">Delete</span></td>
+			    		<td style="display: none;"><span id="edit-confirm" onclick="confirmUser(this)">Confirm Edit</span></td>
+			    		<td style="display: none;"><span id="delete-confirm" onclick="deleteConfirmUser(this)">Confirm Delete</span></td>
+			    		<td style="display: none;"><span id="cancel-confirm" onclick="cancel(this)">cancel</span></td>
+			    	</tr>
+								<tr class="evenrowcolor">
+			    		<td>20</td>
+			    		<td>gary20</td>
+			    		<td>sysugjf@gmail.com</td>
+			    		<td>5554409</td>
+			    		<td><span id="edit" onclick="editUser(this)">Edit</span>&nbsp;&nbsp;&nbsp;<span id="delete" onclick="deleteUser(this)">Delete</span></td>
+			    		<td style="display: none;"><span id="edit-confirm" onclick="confirmUser(this)">Confirm Edit</span></td>
+			    		<td style="display: none;"><span id="delete-confirm" onclick="deleteConfirmUser(this)">Confirm Delete</span></td>
+			    		<td style="display: none;"><span id="cancel-confirm" onclick="cancel(this)">cancel</span></td>
+			    	</tr>
+								<tr class="oddrowcolor">
+			    		<td>21</td>
+			    		<td>gary21</td>
+			    		<td>sysugjf@gmail.com</td>
+			    		<td>5554409</td>
+			    		<td><span id="edit" onclick="editUser(this)">Edit</span>&nbsp;&nbsp;&nbsp;<span id="delete" onclick="deleteUser(this)">Delete</span></td>
+			    		<td style="display: none;"><span id="edit-confirm" onclick="confirmUser(this)">Confirm Edit</span></td>
+			    		<td style="display: none;"><span id="delete-confirm" onclick="deleteConfirmUser(this)">Confirm Delete</span></td>
+			    		<td style="display: none;"><span id="cancel-confirm" onclick="cancel(this)">cancel</span></td>
+			    	</tr>
+								<tr class="evenrowcolor">
+			    		<td>22</td>
+			    		<td>gary22</td>
+			    		<td>sysugjf@gmail.com</td>
+			    		<td>5554409</td>
+			    		<td><span id="edit" onclick="editUser(this)">Edit</span>&nbsp;&nbsp;&nbsp;<span id="delete" onclick="deleteUser(this)">Delete</span></td>
+			    		<td style="display: none;"><span id="edit-confirm" onclick="confirmUser(this)">Confirm Edit</span></td>
+			    		<td style="display: none;"><span id="delete-confirm" onclick="deleteConfirmUser(this)">Confirm Delete</span></td>
+			    		<td style="display: none;"><span id="cancel-confirm" onclick="cancel(this)">cancel</span></td>
+			    	</tr>
+								<tr class="oddrowcolor">
+			    		<td>23</td>
+			    		<td>gary23</td>
+			    		<td>sysugjf@gmail.com</td>
+			    		<td>5554409</td>
+			    		<td><span id="edit" onclick="editUser(this)">Edit</span>&nbsp;&nbsp;&nbsp;<span id="delete" onclick="deleteUser(this)">Delete</span></td>
+			    		<td style="display: none;"><span id="edit-confirm" onclick="confirmUser(this)">Confirm Edit</span></td>
+			    		<td style="display: none;"><span id="delete-confirm" onclick="deleteConfirmUser(this)">Confirm Delete</span></td>
+			    		<td style="display: none;"><span id="cancel-confirm" onclick="cancel(this)">cancel</span></td>
+			    	</tr>
+								<tr class="evenrowcolor">
+			    		<td>24</td>
+			    		<td>gary24</td>
+			    		<td>sysugjf@gmail.com</td>
+			    		<td>5554409ddd</td>
+			    		<td><span id="edit" onclick="editUser(this)">Edit</span>&nbsp;&nbsp;&nbsp;<span id="delete" onclick="deleteUser(this)">Delete</span></td>
+			    		<td style="display: none;"><span id="edit-confirm" onclick="confirmUser(this)">Confirm Edit</span></td>
+			    		<td style="display: none;"><span id="delete-confirm" onclick="deleteConfirmUser(this)">Confirm Delete</span></td>
+			    		<td style="display: none;"><span id="cancel-confirm" onclick="cancel(this)">cancel</span></td>
+			    	</tr>
+								<tr class="oddrowcolor">
+			    		<td>25</td>
+			    		<td>gary25</td>
+			    		<td>sysugjf@gmail.com</td>
+			    		<td>5554409ddd</td>
+			    		<td><span id="edit" onclick="editUser(this)">Edit</span>&nbsp;&nbsp;&nbsp;<span id="delete" onclick="deleteUser(this)">Delete</span></td>
+			    		<td style="display: none;"><span id="edit-confirm" onclick="confirmUser(this)">Confirm Edit</span></td>
+			    		<td style="display: none;"><span id="delete-confirm" onclick="deleteConfirmUser(this)">Confirm Delete</span></td>
+			    		<td style="display: none;"><span id="cancel-confirm" onclick="cancel(this)">cancel</span></td>
+			    	</tr>
+								<tr class="evenrowcolor">
+			    		<td>26</td>
+			    		<td>gary26</td>
+			    		<td>sysugjf@gmail.com</td>
+			    		<td>5554409ddd</td>
+			    		<td><span id="edit" onclick="editUser(this)">Edit</span>&nbsp;&nbsp;&nbsp;<span id="delete" onclick="deleteUser(this)">Delete</span></td>
+			    		<td style="display: none;"><span id="edit-confirm" onclick="confirmUser(this)">Confirm Edit</span></td>
+			    		<td style="display: none;"><span id="delete-confirm" onclick="deleteConfirmUser(this)">Confirm Delete</span></td>
+			    		<td style="display: none;"><span id="cancel-confirm" onclick="cancel(this)">cancel</span></td>
+			    	</tr>
+								<tr class="oddrowcolor">
+			    		<td>27</td>
+			    		<td>gary27</td>
+			    		<td>sysugjf@gmail.com</td>
+			    		<td>5554409ddd</td>
+			    		<td><span id="edit" onclick="editUser(this)">Edit</span>&nbsp;&nbsp;&nbsp;<span id="delete" onclick="deleteUser(this)">Delete</span></td>
+			    		<td style="display: none;"><span id="edit-confirm" onclick="confirmUser(this)">Confirm Edit</span></td>
+			    		<td style="display: none;"><span id="delete-confirm" onclick="deleteConfirmUser(this)">Confirm Delete</span></td>
+			    		<td style="display: none;"><span id="cancel-confirm" onclick="cancel(this)">cancel</span></td>
+			    	</tr>
+								<tr class="evenrowcolor">
+			    		<td>28</td>
+			    		<td>gary28</td>
+			    		<td>sysugjf@gmail.com</td>
+			    		<td>5554409ddd</td>
+			    		<td><span id="edit" onclick="editUser(this)">Edit</span>&nbsp;&nbsp;&nbsp;<span id="delete" onclick="deleteUser(this)">Delete</span></td>
+			    		<td style="display: none;"><span id="edit-confirm" onclick="confirmUser(this)">Confirm Edit</span></td>
+			    		<td style="display: none;"><span id="delete-confirm" onclick="deleteConfirmUser(this)">Confirm Delete</span></td>
+			    		<td style="display: none;"><span id="cancel-confirm" onclick="cancel(this)">cancel</span></td>
+			    	</tr>
+								<tr class="oddrowcolor">
+			    		<td>29</td>
+			    		<td>gary29</td>
+			    		<td>sysugjf@gmail.com</td>
+			    		<td>5554409ddd</td>
+			    		<td><span id="edit" onclick="editUser(this)">Edit</span>&nbsp;&nbsp;&nbsp;<span id="delete" onclick="deleteUser(this)">Delete</span></td>
+			    		<td style="display: none;"><span id="edit-confirm" onclick="confirmUser(this)">Confirm Edit</span></td>
+			    		<td style="display: none;"><span id="delete-confirm" onclick="deleteConfirmUser(this)">Confirm Delete</span></td>
+			    		<td style="display: none;"><span id="cancel-confirm" onclick="cancel(this)">cancel</span></td>
+			    	</tr>
+								<tr class="evenrowcolor">
+			    		<td>30</td>
+			    		<td>gary30</td>
+			    		<td>sysugjf@gmail.com</td>
+			    		<td>5554409ddd</td>
+			    		<td><span id="edit" onclick="editUser(this)">Edit</span>&nbsp;&nbsp;&nbsp;<span id="delete" onclick="deleteUser(this)">Delete</span></td>
+			    		<td style="display: none;"><span id="edit-confirm" onclick="confirmUser(this)">Confirm Edit</span></td>
+			    		<td style="display: none;"><span id="delete-confirm" onclick="deleteConfirmUser(this)">Confirm Delete</span></td>
+			    		<td style="display: none;"><span id="cancel-confirm" onclick="cancel(this)">cancel</span></td>
+			    	</tr>
+						</tbody></table>
+		</div>
+
+		<div class="paginator">
+
+				<div id="prev-page" onclick="setPrevPage(this)">prev</div>
+				<div id="page-num">1/1</div>
+				<div id="next-page" onclick="setNextPage(this)">next</div>
+				<div style="clear:both;"></div>
+
+		<div>
+
+		
+	
+</div></div></div>
+	<div style="clear:both;"></div>
+</div>
+<div style="display:none"><script src="./login_files/stat.php" language="JavaScript" charset="gb2312"></script><script src="./login_files/core.php" charset="utf-8" type="text/javascript"></script><a href="http://www.cnzz.com/stat/website.php?web_id=155540" target="_blank" title="站长统计">站长统计</a></div>
+
+</body></html>
